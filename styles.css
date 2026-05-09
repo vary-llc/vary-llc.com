@@ -528,7 +528,7 @@ dd {
   align-items: center;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 780px) {
   .hero {
     min-height: auto;
   }
@@ -558,7 +558,7 @@ dd {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 640px) {
   .site-header {
     padding: 18px;
   }
