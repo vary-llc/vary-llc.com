@@ -3,7 +3,7 @@ const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 
 const siteConfig = {
-  contactFormUrl: "",
+  contactFormUrl: "https://forms.gle/zFsEDjRRSg5nrE3cA",
 };
 
 const updateHeader = () => {
