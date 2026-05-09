@@ -195,6 +195,7 @@ h3 {
   margin: 0;
   color: var(--text);
   line-height: 1.05;
+  text-wrap: balance;
 }
 
 h1 {
@@ -214,7 +215,14 @@ h3 {
 
 p,
 dd {
-  overflow-wrap: anywhere;
+  line-break: strict;
+  text-wrap: pretty;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+p {
+  overflow-wrap: normal;
 }
 
 .hero-subtitle {
@@ -305,6 +313,20 @@ dd {
   grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
   gap: clamp(32px, 7vw, 112px);
   align-items: start;
+}
+
+.intro {
+  grid-template-columns: minmax(430px, 0.95fr) minmax(0, 1.05fr);
+}
+
+.intro-title {
+  font-size: clamp(2.4rem, 4vw, 3.55rem);
+  line-height: 1.08;
+}
+
+.intro-title span {
+  display: block;
+  white-space: nowrap;
 }
 
 .intro p,
